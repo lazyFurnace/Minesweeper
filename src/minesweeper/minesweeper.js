@@ -14,6 +14,7 @@ function createRendom(num) {
 }
 
 export default class Minesweeper extends React.Component {
+  // 生成布局数据
   createLayout = (layout) => {
     const layoutArr = [];
     for (let row = 0; row < layout.row; row++) {
@@ -30,6 +31,7 @@ export default class Minesweeper extends React.Component {
     }
     return layoutArr;
   }
+  // 生成地雷数据
   createMine = (layout) => {
     const layoutArr = [];
     for (let row = 0; row < layout.row; row++) {
@@ -47,6 +49,7 @@ export default class Minesweeper extends React.Component {
     }
     return mineArr;
   }
+  // 生成扫雷游戏数据
   createGame = (layoutData, mineData) => {
     mineData.forEach(item => {
       const [row, column] = item;
