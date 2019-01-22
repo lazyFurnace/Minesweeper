@@ -9,7 +9,7 @@ class App extends Component {
     }
     return (
       <div style={style}>
-        <Minesweeper />
+        {/* <Minesweeper /> */}
       </div>
       
     );
